@@ -4,6 +4,7 @@ Customer reviews can often be long and descriptive. Too much information can con
 
 ## Attention Mechanism 
 
+![gg](https://github.com/viveksaip/Automatic-Text-Summarization/blob/main/images/att.png?raw=true)
 
 
 ## Stacked LSTM 
