@@ -8,6 +8,7 @@ Customer reviews can often be long and descriptive. Too much information can con
 
 ## Stacked LSTM 
 
+![gg](https://github.com/viveksaip/Automatic-Text-Summarization/images/slstm.jpg?raw=true)
 
 
 ## Result 
