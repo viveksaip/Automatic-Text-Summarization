@@ -25,3 +25,52 @@ Predicted summary: great product
 Review: item arrived sugar free shipped regular version carmel small internal sticker bottle stated sugar free although company label bottle stated 
 Original summary: wrong item
 Predicted summary: not good
+
+
+## Detailed Expalanation 
+
+# Text Summarization Model
+
+## Overview
+This project implements an automatic text summarization model using deep learning techniques, specifically a sequence-to-sequence architecture enhanced with attention mechanisms. The goal is to generate concise and coherent summaries from lengthy text documents.
+
+## Key Components
+
+### 1. Data Collection
+- Utilized a dataset containing reviews with full text and corresponding summaries.
+- Preprocessed the data to clean it and remove duplicates and missing values.
+
+### 2. Text Preprocessing
+- Implemented a text cleaning function that:
+  - Converts text to lowercase.
+  - Removes HTML tags using BeautifulSoup.
+  - Expands contractions (e.g., "can't" to "cannot").
+  - Removes stop words and non-alphabetic characters.
+- Tokenized and padded the cleaned text to create uniform input sequences.
+
+### 3. Model Architecture
+- Built a sequence-to-sequence model comprising:
+  - **Encoder**: Processes the input text and encodes it into a set of states.
+  - **Decoder**: Generates the summary from the encoded states using an attention mechanism.
+- The **Attention Layer** allows the decoder to focus on relevant parts of the input, enhancing the summary quality.
+
+### 4. Training the Model
+- The model was trained on a training set with early stopping to prevent overfitting.
+- Used sparse categorical crossentropy loss function suitable for multi-class classification.
+
+### 5. Generating Summaries
+- Implemented a prediction function that processes input text and generates a summary iteratively until reaching an end token or a maximum length.
+
+### 6. Evaluation
+- While the main focus was on building the model, evaluation metrics like ROUGE can be utilized to assess the quality of generated summaries against reference summaries.
+
+## Key Learnings and Challenges
+- **Challenges**: Tuning model parameters and ensuring effective attention mechanism integration.
+- **Learnings**: Gained insights into natural language processing, sequence modeling, and the role of attention mechanisms in improving performance.
+
+## Future Improvements
+- Explore advanced architectures, such as Transformer models, to further enhance summarization quality.
+- Implement user feedback mechanisms for iterative improvement based on real-world usage.
+
+
+
